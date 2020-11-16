@@ -23,7 +23,6 @@ function Movie( props) {
       .catch((err) => console.log(err.response));
   };
 
-
   // const item = props.items.find(
   //   thing => `${thing.id}` === props.match.params.id
   // );
@@ -54,6 +53,7 @@ function Movie( props) {
     .then(res =>{
       props.setMovieList(
         props.movieList.filter( movie => 
+
           movie.id !== res.data
         )
       )
