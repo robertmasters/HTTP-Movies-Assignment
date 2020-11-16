@@ -5,6 +5,25 @@ body {
   background-color: #f2f2f2;
 }
 
+.updateMovie{
+  background-color: whitesmoke;
+  border: 2px;
+  border-style: solid;
+  border-color: grey;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.24);
+  padding: 1rem;
+  cursor: pointer;
+  margin: auto;
+  width: 50%;
+}
+
+.updateMovie h2{
+  color: grey;
+  
+}
+
+
 .movie-card {
   background-color: #fff;
   border: 0;
