@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
-
+import { v4 as uuidv4 } from 'uuid';
 function SavedList({ list }) {
   return (
     <div className="saved-list">
@@ -16,9 +16,13 @@ function SavedList({ list }) {
           </NavLink>
         );
       })}
+
+      <Link to = '/add-movie'> Add Movie </Link>
+
       <div className="home-button">
-        <Link to="/">Home</Link>
+        <Link to="/"> Home </Link>
       </div>
+      
     </div>
   );
 }
